@@ -1,0 +1,20 @@
+Graph with:
+
+Vertices: objects
+Edges: proximity/affinity between objects
+ 
+ 
+We consider the dataset in MATLAB:
+
+Type in the console "load fisheriris.mat" or "load('fisheriris.mat');"  - without the double quotes   (you need some MATLAB toolbox to have it)
+fisheriris.mat Download fisheriris.mat   (file to download)
+ 
+
+The Iris flower data set or Fisher's Iris data set is a multivariate data set used and made famous by the British statistician and biologist Ronald Fisher (1936).
+
+https://en.wikipedia.org/wiki/Iris_flower_data_setLinks to an external site.
+
+The data set consists of 50 samples from each of 3 species of Iris (Iris setosa, Iris virginica and Iris versicolor). 4 features were measured from each sample: the length and the width of the sepals and petals, in centimeters.
+
+Create the affinity matrix of the dataset using the Euclidean distance to compare flowers
+Display the affinity matrix with the rows and columns organized per species of Iris
