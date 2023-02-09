@@ -1,0 +1,12 @@
+close all
+clear
+clc
+
+load fisheriris.mat 
+x = meas;
+sigma = 1; %Sigma value
+d = pdist(x);
+affinityMatrix = squareform(d);
+affinityMatrix = exp(-affinityMatrix.^2/(2*sigma^2));
+
+imagesc(affinityMatrix);
