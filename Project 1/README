@@ -32,3 +32,7 @@ Create a function to get a matrix to get the number of words, based on the previ
 Create a function that generates text based on the probability of the words, using the previous word as prior information. 
 Create additional functions to improve the automatic text generation process, by adding constraint or other rules for the generation.
 Create a function to plot the distribution of the unique words
+
+NOTICE:
+Assignment is completed with MATLAB software. Raw .m file is labelled "project1.m". 
+Solution can be found in "project1.txt".
