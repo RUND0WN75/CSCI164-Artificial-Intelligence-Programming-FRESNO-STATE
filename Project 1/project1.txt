@@ -1,0 +1,7 @@
+close all
+clear
+clc
+
+%File I/O
+filetext = fileread('A book for the dairy farmer.txt');
+
