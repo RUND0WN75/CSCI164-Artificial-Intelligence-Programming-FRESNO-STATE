@@ -18,3 +18,7 @@ The data set consists of 50 samples from each of 3 species of Iris (Iris setosa,
 
 Create the affinity matrix of the dataset using the Euclidean distance to compare flowers
 Display the affinity matrix with the rows and columns organized per species of Iris
+
+NOTICE:
+Assignment is completed with MATLAB software. Raw .m file is labelled "affinity_matrix.m". 
+Solution can be found in "affinity_matrix.txt".
