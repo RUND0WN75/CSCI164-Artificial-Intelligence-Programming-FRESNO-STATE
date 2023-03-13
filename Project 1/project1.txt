@@ -3,5 +3,45 @@ clear
 clc
 
 %File I/O
-filetext = fileread('A book for the dairy farmer.txt');
+%Counting the number of existing words in the document
+%filetext = fileread("A book for the dairy farmer.txt");
+fid = fopen("C:\Users\Craig Walkup\Documents\Fresno State\SPRING 2023\CSCI 164 AI Programming\MATLAB\A book for the dairy farmer.txt");
+count = 0;
+while ~feof(fid) 
+    line = fget1(fid);
+    line = string(line);
+    s = split(line);
+    count = count + length(s);
+end
+disp('Done');
 
+%Converting all text to lowercase
+lowercase = lower('filetext');
+
+%Counting the number of unique words
+word = textscan(fid,'%s');
+unique_words = unique(word{1,1});
+freq = zeros(numel(unique_words),1);
+for i=1:numel(unique_words)
+    if max(unique_words{i} ~= ' ')
+        for j=1:numel(words{1,1})
+            if strcmp(words{1,1}(j),unique_words{i})
+                freq(i) = freq(i) + 1;
+            end
+        end
+    end
+end
+
+%Counting the number of unique words where you specify as an option the minimum number of characters in the word
+
+%Counting the occurence of each word (uni-gram)
+A = count(str,unique_words);
+
+%Function to getting a matrix to get the number of words, based on the previous word (bi-gram)
+function bi_gramMatrix[]
+
+%Generating text based on the probability of the words, using the previous word as prior information
+
+%Improving automatic text generation process, extra constraint/rule needed
+
+%Plotting distribution of unique words
